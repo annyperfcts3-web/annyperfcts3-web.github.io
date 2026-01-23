@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <title>Portfólio | Anielle Rocha Passos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Portfólio | Anielle Rocha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -14,6 +14,7 @@
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #f4f6f8;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
@@ -21,21 +22,20 @@
       color: #fff;
       padding: 60px 20px;
       text-align: center;
-      animation: fadeDown 1s ease;
     }
 
-    header img {
-      width: 140px;
-      height: 140px;
+    .profile-pic {
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #fff;
-      margin-bottom: 15px;
+      border: 5px solid #fff;
+      margin-bottom: 20px;
     }
 
     header h1 {
       margin: 10px 0;
-      font-size: 32px;
+      font-size: 34px;
     }
 
     header p {
@@ -43,22 +43,29 @@
       opacity: 0.9;
     }
 
+    .icons a {
+      color: #fff;
+      font-size: 26px;
+      margin: 0 12px;
+      transition: 0.3s;
+    }
+
+    .icons a:hover {
+      color: #ffd369;
+      transform: scale(1.2);
+    }
+
     section {
       max-width: 1100px;
       margin: 40px auto;
       padding: 0 20px;
-      animation: fadeUp 1s ease;
     }
 
     h2 {
       color: #203a43;
       margin-bottom: 20px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
     }
 
     .card {
@@ -66,51 +73,23 @@
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
+      margin-bottom: 20px;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    ul {
+      padding-left: 20px;
     }
 
-    .card h3 {
-      margin-top: 0;
-      color: #2c5364;
-    }
-
-    .icons {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .icons a {
-      color: #203a43;
-      font-size: 28px;
-      margin: 0 15px;
-      transition: 0.3s;
-    }
-
-    .icons a:hover {
-      color: #0f2027;
-      transform: scale(1.2);
+    .tech img {
+      margin: 6px;
     }
 
     footer {
       background: #111;
       color: #fff;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       margin-top: 50px;
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -118,91 +97,145 @@
 <body>
 
 <header>
-  <img src="foto.jpg" alt="Anielle Rocha Passos">
-  <h1>Anielle Rocha Passos</h1>
-  <p>Analista de TI Júnior | Python | Automação | Redes | Suporte N1</p>
+  <img src="foto-redonda.png" alt="Anielle Rocha" class="profile-pic">
+  <h1>👋 Olá! Eu sou Anielle Rocha</h1>
+  <p>
+    <strong>Python | Automação | Dados | Dev Júnior</strong><br>
+    Análise de Dados • BI • Machine Learning<br>
+    Redes de Computadores • Inglês Intermediário
+  </p>
+
+  <div class="icons">
+    <a href="https://wa.me/5561985419524" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://br.linkedin.com/in/anielle-rocha-a8a06203" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/annyperfcts3-web" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
 </header>
 
 <section>
-  <h2>Sobre mim</h2>
+  <h2>🧠 Sobre mim</h2>
   <div class="card">
     <p>
-      Estudante de Redes da Computação pela Universidade Católica. Experiência em
-      infraestrutura de redes, suporte N1, automação com Python e monitoramento.
-      Perfil proativo, com foco em soluções práticas e melhoria contínua.
+      Profissional de Tecnologia com experiência em <strong>Help Desk, Suporte Técnico e Infraestrutura</strong>,
+      em transição estratégica para <strong>Python, Automação e Análise de Dados</strong>.
+    </p>
+    <p>
+      Vivência em ambientes corporativos de grande porte (Projeto Banco do Brasil),
+      atuando com suporte ao usuário, redes, monitoramento e projetos práticos com
+      <strong>Python e Web</strong>, voltados à automação e produtividade.
     </p>
   </div>
 </section>
 
 <section>
-  <h2>Experiência Profissional</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>BB Tecnologia e Serviços – Banco do Brasil</h3>
-      <p><strong>Analista de Infraestrutura de Redes Júnior</strong><br>
-      jun/2021 – mar/2025</p>
-      <ul>
-        <li>Suporte N1 de conectividade para agências</li>
-        <li>Roteadores Cisco 4451</li>
-        <li>SD-WAN, Switches, Firewalls, Wi-Fi</li>
-        <li>Monitoramento com Grafana</li>
-      </ul>
-    </div>
+  <h2>💼 Experiência Profissional</h2>
 
-    <div class="card">
-      <h3>MGB Doctor SAC</h3>
-      <p><strong>Help Desk</strong><br>
-      ago/2012 – set/2014</p>
-      <ul>
-        <li>Suporte a sistemas do SERPRO</li>
-        <li>NFE, SPED, RENAVAM, COMPRASNET</li>
-        <li>Atendimento a órgãos públicos</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Projetos</h2>
   <div class="card">
-    <h3>Portfólio Profissional</h3>
-    <p>
-      Site desenvolvido por mim utilizando <strong>HTML, CSS e GitHub Pages</strong>,
-      com versionamento via Git e deploy automatizado.
-    </p>
+    <h3>🖥️ Analista de Infraestrutura de Redes Júnior</h3>
+    <strong>Ágil Terceirizada – Projeto BBTS (Banco do Brasil)</strong><br>
+    <em>Mai/2024 – Mar/2025</em>
+    <ul>
+      <li>Suporte de primeiro nível à conectividade de agências</li>
+      <li>Acesso remoto a roteadores Cisco 4451</li>
+      <li>SD-WAN, Huawei, Switches e Wi-Fi</li>
+      <li>Monitoramento via Grafana</li>
+      <li>Boas práticas ITIL</li>
+    </ul>
   </div>
-</section>
 
-<section>
-  <h2>Idiomas</h2>
   <div class="card">
-    <p><strong>Inglês:</strong> Intermediário (leitura e compreensão técnica)</p>
+    <h3>📞 Teleatendente – Cobrança Ativa e Receptiva</h3>
+    <strong>Ágil Terceirizada – Projeto Banco do Brasil</strong><br>
+    <em>Jan/2021 – Mai/2024</em>
+    <ul>
+      <li>Atendimento ativo e receptivo</li>
+      <li>Registro em sistemas internos</li>
+      <li>Cumprimento de metas e indicadores</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>📞 Teleatendente</h3>
+    <strong>G&E</strong><br>
+    <em>Mar/2025 – Atual</em>
+    <ul>
+      <li>Atendimento via telefone e WhatsApp</li>
+      <li>Empréstimos, cartões e aumento de limite</li>
+      <li>Sistema URO</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🧠 Help Desk</h3>
+    <strong>MGB / Doctor SAC</strong><br>
+    <em>Jan/2012 – Dez/2014</em>
+    <ul>
+      <li>Suporte a sistemas do SERPRO</li>
+      <li>Abertura e encaminhamento de chamados</li>
+      <li>Atendimento a órgãos públicos</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🧑‍💼 Gerente</h3>
+    <strong>JR Veículos</strong><br>
+    <em>Jan/2018 – Dez/2019</em>
+    <ul>
+      <li>Operações bancárias</li>
+      <li>Análise financeira</li>
+      <li>Gestão e contratos</li>
+    </ul>
   </div>
 </section>
 
 <section>
-  <h2>Contato</h2>
-  <div class="icons">
-    <a href="https://www.linkedin.com/in/aniellerochaba8a06203/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
+  <h2>🚀 Projetos</h2>
 
-    <a href="https://wa.me/5561985419524" target="_blank">
-      <i class="fab fa-whatsapp"></i>
+  <div class="card">
+    <h3>📧 Automação de Envio de E-mails com Python</h3>
+    <p>Script para envio automático de e-mails com anexos e mensagens personalizadas.</p>
+    <a href="https://github.com/annyperfcts3-web/automa-o-email-python" target="_blank">
+      Ver no GitHub
     </a>
+  </div>
 
-    <a href="https://github.com/annyperfcts3-web" target="_blank">
-      <i class="fab fa-github"></i>
+  <div class="card">
+    <h3>🌐 Site de Portfólio Profissional</h3>
+    <p>Desenvolvido com HTML, CSS e publicado via GitHub Pages.</p>
+    <a href="https://annyperfcts3-web.github.io" target="_blank">
+      Acessar site
     </a>
+  </div>
+</section>
+
+<section>
+  <h2>🛠️ Tecnologias</h2>
+  <div class="card tech">
+    <img src="https://skillicons.dev/icons?i=python,html,css,git,github,vscode,linux,aws">
+  </div>
+</section>
+
+<section>
+  <h2>🎓 Formação & Certificações</h2>
+  <div class="card">
+    <ul>
+      <li>🎓 Redes de Computadores – UCB (em andamento)</li>
+      <li>✅ ITIL 4 – Fundamentos</li>
+      <li>🐍 Python Avançado – Hashtag Treinamentos</li>
+      <li>📊 Análise de Dados – Fundação Bradesco</li>
+      <li>☁️ Fundamentos de Cloud / AWS</li>
+      <li>🌐 Guia Cisco CCNA</li>
+    </ul>
   </div>
 </section>
 
 <footer>
-  © 2026 — Portfólio Anielle Rocha Passos
+  © 2026 — Portfólio Anielle Rocha
 </footer>
 
 </body>
 </html>
+
 
 
 
