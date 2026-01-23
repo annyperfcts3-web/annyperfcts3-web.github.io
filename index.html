@@ -25,13 +25,19 @@
       text-align: center;
     }
 
-    .profile-pic {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 25px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  .profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+
+  background: transparent; /* REMOVE o branco */
+  padding: 0;              /* REMOVE o anel */
+  border: none;            /* GARANTE sem borda */
+}
+
     }
 
     header h1 {
@@ -62,32 +68,61 @@
       color: #ffd369;
     }
 
-    /* ===== SECTIONS ===== */
-    section {
-      max-width: 1100px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
+  /* ===== SECTIONS ===== */
+section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
 
-    h2 {
-      color: #203a43;
-      margin-bottom: 20px;
-      font-size: 28px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 6px;
-    }
+h2 {
+  color: #ffd369;                 /* dourado elegante */
+  margin-bottom: 20px;
+  font-size: 28px;
+  border-bottom: 2px solid #2c5364;
+  padding-bottom: 6px;
+}
 
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-      margin-bottom: 25px;
-    }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0f2027;   /* fundo escuro */
+  color: #eaeaea;
+  line-height: 1.6;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+.card {
+  background: #203a43;
+  color: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  color: #ffd369;
+}
+a {
+  color: #ffd369;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+    
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
 
     /* ===== FOOTER ===== */
     footer {
