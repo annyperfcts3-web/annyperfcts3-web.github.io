@@ -14,22 +14,101 @@
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #f4f6f8;
       color: #333;
+      line-height: 1.6;
     }
 
+    /* ===== HEADER ===== */
     header {
       background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
       color: #fff;
-      padding: 60px 20px;
+      padding: 80px 20px 70px;
       text-align: center;
     }
 
     .profile-pic {
-      width: 220px;
-      height: 220px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
       object-fit: cover;
-      border: 5px solid #fff;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-size: 17px;
+      opacity: 0.95;
+    }
+
+    .icons {
+      margin-top: 25px;
+    }
+
+    .icons a {
+      color: #fff;
+      font-size: 26px;
+      margin: 0 14px;
+      transition: 0.3s;
+    }
+
+    .icons a:hover {
+      transform: scale(1.2);
+      color: #ffd369;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #203a43;
       margin-bottom: 20px;
+      font-size: 28px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 80px;
+      font-size: 14px;
+    }
+
+    /* ===== RESPONSIVO ===== */
+    @media (max-width: 768px) {
+      .profile-pic {
+        width: 220px;
+        height: 220px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
@@ -38,16 +117,12 @@
 
 <header>
   <img src="foto-redonda.png" alt="Anielle Rocha" class="profile-pic">
+
   <h1>👋 Olá! Eu sou Anielle Rocha</h1>
-  <p>Python | Automação | Dados | Dev Júnior</p>
-</header>
 
-</body>
-</html>
-
-    Análise de Dados • BI • Machine Learning<br>
-    Redes de Computadores • Inglês Intermediário
-  </p>
+  <p><strong>Python | Automação | Dados | Dev Júnior</strong></p>
+  <p>Análise de Dados • BI • Machine Learning</p>
+  <p>Redes de Computadores • Inglês Intermediário</p>
 
   <div class="icons">
     <a href="https://wa.me/5561985419524" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -66,8 +141,15 @@
     <p>
       Vivência em ambientes corporativos de grande porte (Projeto Banco do Brasil),
       atuando com suporte ao usuário, redes, monitoramento e projetos práticos com
-      <strong>Python e Web</strong>, voltados à automação e produtividade.
+      <strong>Python e Web</strong>.
     </p>
+  </div>
+</section>
+
+<section>
+  <h2>🛠️ Tecnologias & Ferramentas</h2>
+  <div class="card" style="text-align:center;">
+    <img src="https://skillicons.dev/icons?i=python,html,css,git,github,vscode,linux,aws" alt="Tecnologias">
   </div>
 </section>
 
@@ -79,7 +161,7 @@
     <strong>Ágil Terceirizada – Projeto BBTS (Banco do Brasil)</strong><br>
     <em>Mai/2024 – Mar/2025</em>
     <ul>
-      <li>Suporte de primeiro nível à conectividade de agências</li>
+      <li>Suporte N1 à conectividade de agências</li>
       <li>Acesso remoto a roteadores Cisco 4451</li>
       <li>SD-WAN, Huawei, Switches e Wi-Fi</li>
       <li>Monitoramento via Grafana</li>
@@ -94,7 +176,7 @@
     <ul>
       <li>Atendimento ativo e receptivo</li>
       <li>Registro em sistemas internos</li>
-      <li>Cumprimento de metas e indicadores</li>
+      <li>Metas e indicadores</li>
     </ul>
   </div>
 
@@ -115,7 +197,7 @@
     <em>Jan/2012 – Dez/2014</em>
     <ul>
       <li>Suporte a sistemas do SERPRO</li>
-      <li>Abertura e encaminhamento de chamados</li>
+      <li>Abertura de chamados</li>
       <li>Atendimento a órgãos públicos</li>
     </ul>
   </div>
@@ -133,29 +215,22 @@
 </section>
 
 <section>
-  <h2>🚀 Projetos</h2>
+  <h2>🚀 Projetos & Portfólio</h2>
 
   <div class="card">
-    <h3>📧 Automação de Envio de E-mails com Python</h3>
-    <p>Script para envio automático de e-mails com anexos e mensagens personalizadas.</p>
+    <h3>📧 Automação de E-mails com Python</h3>
+    <p>Envio automático de e-mails com anexos e mensagens personalizadas.</p>
     <a href="https://github.com/annyperfcts3-web/automa-o-email-python" target="_blank">
-      Ver no GitHub
+      🔗 Ver no GitHub
     </a>
   </div>
 
   <div class="card">
     <h3>🌐 Site de Portfólio Profissional</h3>
-    <p>Desenvolvido com HTML, CSS e publicado via GitHub Pages.</p>
+    <p>Site em HTML/CSS publicado via GitHub Pages.</p>
     <a href="https://annyperfcts3-web.github.io" target="_blank">
-      Acessar site
+      🔗 Acessar site
     </a>
-  </div>
-</section>
-
-<section>
-  <h2>🛠️ Tecnologias</h2>
-  <div class="card tech">
-    <img src="https://skillicons.dev/icons?i=python,html,css,git,github,vscode,linux,aws">
   </div>
 </section>
 
@@ -164,7 +239,7 @@
   <div class="card">
     <ul>
       <li>🎓 Redes de Computadores – UCB (em andamento)</li>
-      <li>✅ ITIL 4 – Fundamentos</li>
+      <li>📘 ITIL 4 – Fundamentos</li>
       <li>🐍 Python Avançado – Hashtag Treinamentos</li>
       <li>📊 Análise de Dados – Fundação Bradesco</li>
       <li>☁️ Fundamentos de Cloud / AWS</li>
@@ -179,7 +254,4 @@
 
 </body>
 </html>
-
-
-
 
