@@ -18,27 +18,33 @@
     }
 
     /* ===== HEADER ===== */
-    header {
-      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      padding: 80px 20px 70px;
-      text-align: center;
-    }
+ /* REMOVE qualquer círculo/fundo branco decorativo do header */
+header::before,
+header::after {
+  content: none !important;
+}
 
-  .profile-pic {
+/* GARANTE que nada dentro do header fique branco */
+header * {
+  background: transparent !important;
+}
+
+    
+.profile-pic {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 
-  background: transparent; /* REMOVE o branco */
-  padding: 0;              /* REMOVE o anel */
-  border: none;            /* GARANTE sem borda */
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
-    }
+    
 
     header h1 {
       margin: 0 0 10px;
@@ -52,21 +58,42 @@
       opacity: 0.95;
     }
 
-    .icons {
-      margin-top: 25px;
-    }
+.icons a {
+  color: #fff;
+  font-size: 26px;
+  margin: 0 14px;
+  display: inline-block;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
 
-    .icons a {
-      color: #fff;
-      font-size: 26px;
-      margin: 0 14px;
-      transition: 0.3s;
-    }
+.icons a:hover {
+  transform: translateY(-6px) scale(1.15);
+  color: #ffd369;
+}
 
-    .icons a:hover {
-      transform: scale(1.2);
-      color: #ffd369;
-    }
+.icons a:active {
+  transform: scale(0.95);
+}
+.card img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card img:hover {
+  transform: translateY(-6px) scale(1.08);
+}
+
+.card img:active {
+  transform: scale(0.95);
+}          
+
+    .icons a:hover,
+.card img:hover {
+  filter: drop-shadow(0 8px 15px rgba(255, 211, 105, 0.4));
+}
+    
+
+    
 
   /* ===== SECTIONS ===== */
 section {
@@ -167,7 +194,7 @@ ul li {
 </header>
 
 <section>
-  <h2>🧠 Sobre mim</h2>
+  <h2>🖥️ Sobre mim</h2>
   <div class="card">
     <p>
       Profissional de Tecnologia com experiência em <strong>Help Desk, Suporte Técnico e Infraestrutura</strong>,
@@ -227,7 +254,7 @@ ul li {
   </div>
 
   <div class="card">
-    <h3>🧠 Help Desk</h3>
+    <h3>🖥️ Help Desk</h3>
     <strong>MGB / Doctor SAC</strong><br>
     <em>Jan/2012 – Dez/2014</em>
     <ul>
