@@ -29,36 +29,39 @@ header {
   align-items: center;
 }
 
-    .profile-pic {
-  width: 160px;
-  height: 160px;
+.profile-pic {
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 0 auto 15px auto;
-}
+  margin: 0 auto 20px auto;
 
-  background: transparent !important;
-  padding: 0 !important;
-  border: none !important;
-  outline: none !important;
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
 
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
-    
+/* ===== TEXTOS ===== */
+header h1 {
+  margin: 0 0 10px;
+  font-size: 36px;
+  font-weight: 600;
+}
 
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 36px;
-      font-weight: 600;
-    }
+header p {
+  margin: 5px 0;
+  font-size: 17px;
+  opacity: 0.95;
+}
 
-    header p {
-      margin: 5px 0;
-      font-size: 17px;
-      opacity: 0.95;
-    }
+/* ===== ÍCONES ===== */
+.icons {
+  margin-top: 18px;
+}
 
 .icons a {
   color: #fff;
@@ -71,11 +74,14 @@ header {
 .icons a:hover {
   transform: translateY(-6px) scale(1.15);
   color: #ffd369;
+  filter: drop-shadow(0 8px 15px rgba(255, 211, 105, 0.4));
 }
 
 .icons a:active {
   transform: scale(0.95);
 }
+
+/* ===== CARDS ===== */
 .card img {
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -87,16 +93,7 @@ header {
 
 .card img:active {
   transform: scale(0.95);
-}          
-
-    .icons a:hover,
-.card img:hover {
-  filter: drop-shadow(0 8px 15px rgba(255, 211, 105, 0.4));
 }
-    
-
-    
-
   /* ===== SECTIONS ===== */
 section {
   max-width: 1100px;
@@ -182,8 +179,10 @@ ul li {
 
 <body>
 
+<body>
 
-<img src="IMG_5259.jpeg" alt="Anielle Rocha" class="profile-pic">
+<header>
+  <img src="IMG_5259.jpeg" alt="Anielle Rocha" class="profile-pic">
 
   <h1>👋 Olá! Eu sou Anielle Rocha</h1>
 
@@ -192,12 +191,17 @@ ul li {
   <p>Redes de Computadores • Inglês Intermediário</p>
 
   <div class="icons">
-    <a href="https://wa.me/5561985419524" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://br.linkedin.com/in/anielle-rocha-a8a06203" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/annyperfcts3-web" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://wa.me/5561985419524" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/anielle-rocha/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/annyperfcts3-web" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
   </div>
 </header>
-
 <section>
   <h2>🖥️ Sobre mim</h2>
   <div class="card">
