@@ -16,7 +16,6 @@ body {
   color: #eaeaea;
 }
 
-    /* ===== HEADER ===== */
 /* ===== HEADER / CAPA TI ===== */
 .hero {
   position: relative;
@@ -31,18 +30,43 @@ body {
 
   background-size: cover;
   background-position: center;
-  background-r
+  background-repeat: no-repeat;
+}
 
+/* ===== HEADER / CAPA TI ===== */
+.hero {
+  position: relative;
+  padding: 22px 20px 26px;
+
+  background-image:
+    linear-gradient(
+      rgba(5, 20, 35, 0.85),
+      rgba(5, 20, 35, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ===== CENTRALIZA FOTO + TEXTO ===== */
 .hero-content {
   max-width: 1100px;
   margin: 0 auto;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column;   /* foto em cima, texto embaixo */
+  align-items: center;      /* centraliza horizontal */
+  justify-content: center;  /* centraliza vertical */
+
   text-align: center;
 }
 
+.hero-text {
+  text-align: center;
+  margin-top: 12px;
+}
 
 
 .profile-pic {
@@ -121,7 +145,7 @@ body {
   /* ===== SECTIONS ===== */
 section {
   max-width: 1100px;
-  margin: 30px auto;
+  margin: 40px auto;
   padding: 40px 25px;
 
   background: linear-gradient(
@@ -135,13 +159,16 @@ section {
 
 
 
+
 h2 {
-  color: #e6f4ff;          /* branco azulado */
+  text-align: center;
+  color: #e6f4ff;
   margin-bottom: 20px;
-  font-size: 28px;
-  border-bottom: 2px solid #3b82f6; /* azul */
+  font-size: 26px;
+  border-bottom: 2px solid #60a5fa;
   padding-bottom: 6px;
 }
+
 
 
 .card {
@@ -154,17 +181,20 @@ h2 {
   padding: 28px;
   border-radius: 16px;
 
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
+
 
 .card p {
   line-height: 1.7;
   font-size: 16px;
   color: #e6f4ff;
+  text-align: center;
 }
 
+
 .card h3 {
-  color: #ffd369;
+    color: #e6f4ff;
 }
 a {
   color: #60a5fa;   /* azul moderno */
@@ -224,45 +254,45 @@ ul li {
 
 <header class="hero">
   <div class="hero-content">
+
     <img src="IMG_5259.jpeg" alt="Anielle Rocha" class="profile-pic">
 
     <div class="hero-text">
       <h1>Anielle Rocha</h1>
-      <p class="subtitle">
-        Analista de TI Júnior | Python (Automação e Dados) | Infraestrutura de Redes  | Machine Learning 
+
+      <p>
+        Analista de TI Júnior | Python (Automação e Dados) |
+        Infraestrutura de Redes | Machine Learning
       </p>
+
       <p>Suporte N1 • ITIL • Cisco • SD-WAN</p>
-        <p>Inglês Intermediário</p>
+      <p>Inglês Intermediário</p>
 
       <div class="icons">
-        <a href="https://wa.me/5561985419524" target="_blank">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/anielle-rocha/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/annyperfcts3-web" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+        <!-- ícones -->
       </div>
     </div>
+
   </div>
 </header>
 
 <section>
-  <h2>🖥️ Sobre mim</h2>
+  <h2>🖥️Sobre mim</h2>
+
   <div class="card">
     <p>
-      Profissional de Tecnologia com experiência em <strong>Help Desk, Suporte Técnico e Infraestrutura</strong>,
-      em transição estratégica para <strong>Python, Automação e Análise de Dados</strong>.
+      Profissional de Tecnologia com experiência em Help Desk, Suporte Técnico e Infraestrutura,
+      em transição estratégica para Python, Automação e Análise de Dados.
     </p>
+
     <p>
       Vivência em ambientes corporativos de grande porte (Projeto Banco do Brasil),
-      atuando com suporte ao usuário, redes, monitoramento e projetos práticos com
-      <strong>Python e Web</strong>.
+      atuando com suporte ao usuário, redes, monitoramento e projetos práticos
+      com Python e Web.
     </p>
   </div>
 </section>
+
 
 <section>
   <h2>🛠️ Tecnologias & Ferramentas</h2>
