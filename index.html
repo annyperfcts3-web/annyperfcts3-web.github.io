@@ -5,96 +5,68 @@
   <title>Portfólio | Anielle Rocha</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Ícones -->
+  <!-- Font Awesome (ícones) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
+/* ===== GERAL ===== */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #0b0f14;  /* preto elegante */
+
+  background: linear-gradient(
+    180deg,
+    #0b1020,  /* azul noturno escuro */
+    #0f172a   /* azul levemente mais claro */
+  );
+
   color: #eaeaea;
 }
 
-/* ===== HEADER / CAPA TI ===== */
-.hero {
-  position: relative;
-  padding: 22px 20px 26px;
 
+/* ===== CAPA / HEADER ===== */
+.hero {
+  padding: 28px 20px 32px;
   background-image:
     linear-gradient(
       rgba(5, 20, 35, 0.85),
       rgba(5, 20, 35, 0.85)
     ),
     url("https://images.unsplash.com/photo-1518770660439-4636190af475");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* ===== HEADER / CAPA TI ===== */
-.hero {
-  position: relative;
-  padding: 22px 20px 26px;
-
-  background-image:
-    linear-gradient(
-      rgba(5, 20, 35, 0.85),
-      rgba(5, 20, 35, 0.85)
-    ),
-    url("https://images.unsplash.com/photo-1518770660439-4636190af475");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* ===== CENTRALIZA FOTO + TEXTO ===== */
 .hero-content {
   max-width: 1100px;
   margin: 0 auto;
 
   display: flex;
-  flex-direction: column;   /* foto em cima, texto embaixo */
-  align-items: center;      /* centraliza horizontal */
-  justify-content: center;  /* centraliza vertical */
-
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.hero-text {
-  text-align: center;
-  margin-top: 12px;
-}
-
-
+/* ===== FOTO ===== */
 .profile-pic {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-
   object-fit: cover;
-  object-position: center 15%; /* sobe a imagem */
-
+  object-position: center 15%;
   border: 4px solid #fff;
   background-color: #fff;
 }
 
-
-@media (max-width: 768px) {
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-  }
+/* ===== TEXTO HEADER ===== */
+.hero-text {
+  margin-top: 14px;
 }
 
-/* ===== TEXTOS ===== */
 .hero-text h1 {
-  margin-top: 12px;
-  margin-bottom: 6px;
-  font-size: 28px;
-  font-weight: 600;
+  margin: 10px 0 6px;
+  font-size: 32px;
   color: #ffffff;
 }
 
@@ -104,61 +76,37 @@ body {
   color: #dbeafe;
 }
 
-
-/* ===== ÍCONES ===== */
+/* ===== ÍCONES SOCIAIS ===== */
 .icons {
   margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
 }
 
 .icons a {
-  color: #fff;
-  font-size:30 px;
-  margin: 0 14px;
-  display: inline-block;
-  transition: transform 0.25s ease, color 0.25s ease;
+  color: #e6f4ff;
+  font-size: 32px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icons a:hover {
+  transform: translateY(-8px) scale(1.2);
   color: #60a5fa;
-  transform: translateY(-6px) scale(1.15);
-  filter: drop-shadow(0 8px 15px rgba(96, 165, 250, 0.4));
 }
-
 
 .icons a:active {
   transform: scale(0.95);
 }
 
-/* ===== CARDS ===== */
-.card img {
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.card img:hover {
-  transform: translateY(-6px) scale(1.08);
-}
-
-.card img:active {
-  transform: scale(0.95);
-}
-  /* ===== SECTIONS ===== */
+/* ===== SECTIONS ===== */
 section {
   max-width: 1100px;
   margin: 40px auto;
   padding: 40px 25px;
-
-  background: linear-gradient(
-    135deg,
-    #0b3c5d,
-    #0f5c8c
-  );
-
+  background: linear-gradient(135deg, #0b3c5d, #0f5c8c);
   border-radius: 20px;
 }
-
-
-
 
 h2 {
   text-align: center;
@@ -169,84 +117,58 @@ h2 {
   padding-bottom: 6px;
 }
 
-
-
+/* ===== CARD ===== */
 .card {
   background: linear-gradient(
-    135deg,
-    #083a5c,
-    #0a4f7a
+    145deg,
+    #2b2452,   /* lilás escuro */
+    #4b3a82    /* lilás iluminado */
   );
 
-  padding: 28px;
-  border-radius: 16px;
+  padding: 30px;
+  border-radius: 18px;
 
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  /* efeito 3D */
+  box-shadow:
+    0 18px 35px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+ transition: transform 0.45s cubic-bezier(.22,1,.36,1),
+            box-shadow 0.45s cubic-bezier(.22,1,.36,1);
+
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 28px 55px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 
+
 .card p {
+  color: #f4f1ff;
   line-height: 1.8;
   font-size: 18px;
-  color: #e6f4ff;
   text-align: center;
 }
 
 
-.card h3 {
-    color: #e6f4ff;
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
 }
-a {
-  color: #60a5fa;   /* azul moderno */
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  color: #93c5fd;
-  text-decoration: underline;
-}
-
-
-
-    
-ul {
-  padding-left: 20px;
-}
-
-ul li {
-  margin-bottom: 8px;
-}
-
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 25px;
-      margin-top: 80px;
-      font-size: 14px;
-    }
-
-    /* ===== RESPONSIVO ===== */
-    @media (max-width: 768px) {
-   .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 25px;
-
-  background: transparent;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-}
-
-
-      header h1 {
-        font-size: 28px;
-      }
-    }
   </style>
 </head>
 
@@ -268,8 +190,19 @@ ul li {
       <p>Suporte N1 • ITIL • Cisco • SD-WAN</p>
       <p>Inglês Intermediário</p>
 
+      <!-- Ícones sociais -->
       <div class="icons">
-        <!-- ícones -->
+        <a href="https://wa.me/5561985419524" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/anielle-rocha/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/annyperfcts3-web" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
     </div>
 
@@ -277,7 +210,7 @@ ul li {
 </header>
 
 <section>
-  <h2>🖥️Sobre mim</h2>
+  <h2>🖥️ Sobre mim</h2>
 
   <div class="card">
     <p>
@@ -292,6 +225,10 @@ ul li {
     </p>
   </div>
 </section>
+
+</body>
+</html>
+
 
 
 <section>
