@@ -17,30 +17,21 @@ body {
 }
 
     /* ===== HEADER ===== */
+/* ===== HEADER / CAPA TI ===== */
 .hero {
-  background: linear-gradient(
-    -45deg,
-    #0a1f2e,
-    #0f3c5c,
-    #102a43,
-    #0b1d2b
-  );
-  background-size: 400% 400%;
-  animation: gradientMove 18s ease infinite;
-
+  position: relative;
   padding: 22px 20px 26px;
-}
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
+  background-image:
+    linear-gradient(
+      rgba(5, 20, 35, 0.85),
+      rgba(5, 20, 35, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+
+  background-size: cover;
+  background-position: center;
+  background-r
 
 .hero-content {
   max-width: 1100px;
@@ -103,10 +94,11 @@ body {
 }
 
 .icons a:hover {
+  color: #60a5fa;
   transform: translateY(-6px) scale(1.15);
-  color: #ffd369;
-  filter: drop-shadow(0 8px 15px rgba(255, 211, 105, 0.4));
+  filter: drop-shadow(0 8px 15px rgba(96, 165, 250, 0.4));
 }
+
 
 .icons a:active {
   transform: scale(0.95);
@@ -128,43 +120,64 @@ body {
   /* ===== SECTIONS ===== */
 section {
   max-width: 1100px;
-  margin: 60px auto;
+  margin: 25px auto;
   padding: 40px 20px;
 
-  background: linear-gradient(145deg, #0f2027, #203a43);
+  background: linear-gradient(
+    135deg,
+    #0b3c5d,
+    #0f5c8c
+  );
+
   border-radius: 18px;
 }
 
 
 h2 {
-  color: #ffd369;                 /* dourado elegante */
+  color: #e6f4ff;          /* branco azulado */
   margin-bottom: 20px;
   font-size: 28px;
-  border-bottom: 2px solid #2c5364;
+  border-bottom: 2px solid #3b82f6; /* azul */
   padding-bottom: 6px;
 }
 
+
 .card {
-  background: #203a43;
+  background: linear-gradient(
+    135deg,
+    #0a4a75,
+    #0e6ba8
+  );
+
   color: #ffffff;
-  padding: 25px;
-  border-radius: 14px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-  margin-bottom: 25px;
+  padding: 28px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
+
+  .card p {
+  line-height: 1.7;
+  font-size: 16px;
+  color: #f0f9ff;
+}
+
+  
 
 .card h3 {
   color: #ffd369;
 }
 a {
-  color: #ffd369;
+  color: #60a5fa;   /* azul moderno */
   text-decoration: none;
   font-weight: 500;
 }
 
 a:hover {
+  color: #93c5fd;
   text-decoration: underline;
 }
+
 
 
     
