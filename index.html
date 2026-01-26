@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
- body {
+body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #0b0f14;  /* preto elegante */
@@ -18,16 +18,38 @@
 
     /* ===== HEADER ===== */
 .hero {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  padding: 18px 20px 22px; /* CONTROLA O TAMANHO DA CAPA */
+  background: linear-gradient(
+    -45deg,
+    #0a1f2e,
+    #0f3c5c,
+    #102a43,
+    #0b1d2b
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 18s ease infinite;
+
+  padding: 22px 20px 26px;
 }
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .hero-content {
   max-width: 1100px;
   margin: 0 auto;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: column;   /* FOTO EM CIMA, TEXTO EMBAIXO */
   align-items: center;
+  text-align: center;
 }
 
 
@@ -53,17 +75,19 @@
 
 /* ===== TEXTOS ===== */
 .hero-text h1 {
-  margin: 0 0 6px;
+  margin-top: 12px;
+  margin-bottom: 6px;
   font-size: 28px;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero-text p {
   margin: 4px 0;
   font-size: 16px;
-  color: #e6f0fa;
+  color: #dbeafe;
 }
+
 
 /* ===== ÍCONES ===== */
 .icons {
@@ -166,8 +190,8 @@ ul li {
     /* ===== RESPONSIVO ===== */
     @media (max-width: 768px) {
    .profile-pic {
-  width: 300px;
-  height: 300px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 25px;
